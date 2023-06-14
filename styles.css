@@ -1,14 +1,56 @@
+section:nth-child(1) {
+  height: 100vh;
+}
+
 .technologies img {
   width: 20%;
 }
 
 .wave {
+  content: "";
+  width: 100vw;
   height: 100vh;
-  background-image: url("./assets/img/wave.svg");
+  opacity: 0.4;
+  background-image: url("./assets/img/fondoWeb.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -3;
 }
-.wave img {
+.foto {
   width: 30vw;
   border-radius: 30% 70% 55% 45% / 30% 34% 66% 70%;
+}
+
+.typewriter {
+  width: 100%;
+}
+
+.typewriter h3 {
+  display: inline-block;
+  font-family: monospace;
+  color: rgb(164, 164, 204);
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  white-space: pre;
+  animation: typing 3s steps(40) 1s 1 normal both,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
 }
