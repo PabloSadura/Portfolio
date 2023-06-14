@@ -1,0 +1,14 @@
+.technologies img {
+  width: 20%;
+}
+
+.wave {
+  height: 100vh;
+  background-image: url("./assets/img/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wave img {
+  width: 30vw;
+  border-radius: 30% 70% 55% 45% / 30% 34% 66% 70%;
+}
